@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+*{
+	padding:0;
+	margin:0;
+}
+
+.content{
+	position:absolute;
+}
+
+.page1{
+	background:#0CF;
+	position:relative;
+}
+
+.page2{
+	background:#000;
+	position:relative;
+}
+
+.page3{
+	background:#F00;
+	position:relative;
+}
+
+.page4{
+	background:#0CF;
+	position:relative;
+}
+
+/*音乐按钮*/
+
+.musicbtn{
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:40px;
+	height:40px;
+	animation:xuanzhuan 2s infinite;
+}
+
+@keyframes xuanzhuan{
+	from{}
+	to{transform:rotate(360deg); 
+	-webkit-transform:rotate(360deg);}
+}
+
+/*小箭头*/
+.up{
+	position:absolute;
+	width:20%;
+	left:40%;
+	bottom:3%;
+	animation:updown 2s linear infinite;
+}
+
+@keyframes updown{
+	0%{}
+	50%{bottom:5%;}
+	100%{bottom:3%;}
+}
+
+/*********************page1************************/
+
+.page1-title{
+	width:60%;
+	position:absolute;
+	left:20%;
+	top:10%;
+}
+
+.page1-flower1,.page1-flower2{
+	position:absolute;
+	height:15%;
+	animation:floweranimation 3s infinite;
+}
+
+.page1-flower1{
+	left:10%;
+	top:10%;
+}
+
+.page1-flower2{
+	top:22%;
+	right:18%;
+}
+
+@keyframes floweranimation{
+	0%{}
+	25%{transform:rotate(30deg);}
+	50%{transform:rotate(0deg);}
+	75%{transform:rotate(-30deg);}
+	100%{transform:rotate(0deg);}
+}
+
+.page1-cloud{
+	position:absolute;
+	width:90%;
+	height:90%;
+	top:5%;
+	left:5%;
+	animation:zooming 2s infinite;
+}
+
+.page1-elements{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0%;
+	left:0%;
+	animation:zooming 2s infinite;
+}
+
+@keyframes zooming{
+	0%{}
+	50%{transform:scale(0.9);}
+	100%{transform:scale(1);}
+}
+
+.page1-building{
+	position:absolute;
+	height:30%;
+	width:100%;
+	bottom:0px;
+	left:0px;
+	display:none;/*隐藏，不显示。*/
+}
+
+.page1-person{
+	position:absolute;
+	width:0px;
+	left:15%;
+	bottom:30%;
+	animation:per 4s infinite;
+}
+
+@keyframes per{
+	0%{}
+	50%{transform:scale(1.2);}
+	100%{transform:scale(1);}
+}
+
+/***********************第二页**********************/
+
+.page2-bg{
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+.page2-text1,.page2-text2{
+	position:absolute;
+	width:70%;
+	right:0px;
+	display:none;
+}
+
+.page2-text1{
+	top:30%;
+}
+
+.page2-text2{
+	top:60%;
+}
+
+/**************************第三页*************************/
+
+.page3-bg{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.page3-station{
+	position:absolute;
+	width:100%;
+	bottom:0px;
+}
+
+.page3-bus{
+	position:absolute;
+	width:65%;
+	bottom:10%;
+	left:0px;
+}
+
+.page3-me{
+	position:absolute;
+	height:15%;
+	right:0px;
+	bottom:13%;
+}
+
+.page3-early,.page3-last{
+	position:absolute;
+	height:5%;
+	display:none;
+}
+
+.page3-early{
+	top:10%;
+}
+
+.page3-last{
+	top:18%;
+}
+
+.page3-wall{
+	width:30%;
+	height:70%;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	display:none;
+}
+
+.page3-cry{
+	width:20%;
+	position:absolute;
+	right:15%;
+	bottom:65%;
+	display:none;
+}
+
+.page3-space{
+	position:absolute;
+	width:0px;
+	left:5%;
+	top:20%;
+}
+
+.page3-where{
+	position:absolute;
+	width:0px;
+	left:10%;
+	bottom:10%;
+}
+
+/****************************第四页***************************/
+.page4-lobg{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+.page4-lo{
+	position:absolute;
+	height:70%;
+	left:5%;
+	bottom:0px;
+}
+
+.page4-ct{
+	position:absolute;
+	width:40%;
+	right:0px;
+	top:15%;
+}
+
+.page4-click{
+	position:absolute;
+	width:50%;
+	left:25%;
+	top:40%;
+	animation:clickanimation 2s infinite;
+}
+
+@keyframes clickanimation{
+	0%{}
+	50%{transform:scale(1.2);}
+	100%{transform:scale(1);}
+}
+
+.page4-bg2{
+	display:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+
+
+.page4-wky{
+	position:absolute;
+	width:50%;
+	left:25%;
+	top:30%;
+	display:none;
+}
